@@ -28,7 +28,7 @@ footer {
     }
   }
 
-  @media (width <= 34.9em) {
+  @media (width <= 36.15em) {
     & .container-footer .container-informacoes {
       text-align: center;
 
