@@ -1,0 +1,45 @@
+.hero {
+  background-color: #F2F2F2;
+
+  .top-zone {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  & h1 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  & strong {
+    color: #004A80;
+    font-size: 30px;
+ }
+
+ .card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+  text-align: center;
+  padding: 20px 7% 0 7%;
+
+  & .card {
+    display: flex;
+    width: 180px;
+    height: 110px;
+    background-color: #fff;
+    border-radius: 8px; 
+    justify-content: center;
+    align-items: center;
+    
+    & img {
+      max-width: 40px;
+    }
+
+    & p {
+      color: #777777;
+    }
+   }
+ }
+
+}
