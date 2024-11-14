@@ -67,10 +67,13 @@
 .checkbox {
   color: var(--text-color);
   user-select: none;
+  cursor: pointer;
   display: inline-block;
+  max-width: 192px;
 
   & input {
     display: none;
+    cursor: pointer;
 
     & + label:before {
       content: "";
@@ -92,5 +95,9 @@
       width: 16.82px;
       height: 17.82px;
     }
+  }
+
+  & label {
+    cursor: pointer;
   }
 }
