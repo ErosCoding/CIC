@@ -1,6 +1,6 @@
 #container-login {
   display: flex;
-  height: 99.6vh;
+  height: 100vh;
 
   & .container-form {
     background-color: var(--secondary-color);
@@ -26,9 +26,10 @@
       & .container-form-logo {
         display: flex;
         justify-content: center;
+        user-select: none;
 
         & img {
-          max-width: 200px;
+          max-width: 120px;
           pointer-events: none;
         }
       }
@@ -54,24 +55,26 @@
 
   & .container-imagem {
     flex: 0 0 35%;
+    user-select: none;
 
     & img {
       height: 100%;
       width: 100%;
       object-fit: cover;
       pointer-events: none;
+      display: block;
     }
   }
 
   @media (width <= 42em) {
     & .container-imagem {
-        display: none;
+      display: none;
     }
 
     & .container-form {
-        & .container-form-login {
-            width: 90%;
-        }
+      & .container-form-login {
+        width: 90%;
+      }
     }
   }
 }
