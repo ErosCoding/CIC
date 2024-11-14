@@ -1,19 +1,19 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  --primary-color: #004A80 ;
+  --primary-color: #004A80;
+  --primary-color-hover: #033e68 ;
   --secondary-color: #f2f2f2;
   --t-color: #45B2D7;
-  --white: #fff;
-  
-}
 
-main {
-  height: 500px;
+  --text-color: #000;
+  --text-secundary-color: #707070;
+  
+  --white: #fff;
 }
 
 body {

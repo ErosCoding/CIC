@@ -1,0 +1,96 @@
+.input {
+  position: relative;
+
+  & input {
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 1px solid var(--text-secundary-color);
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      border-color: var(--text-secundary-color);
+    }
+
+    &:focus {
+      border-color: var(--primary-color);
+
+      & ~ label {
+        top: 0;
+        left: 15px;
+        font-size: 16px;
+        padding: 0 1px;
+        background: var(--secondary-color);
+        color: var(--primary-color);
+      }
+    }
+
+    &:valid ~ label {
+        top: 0;
+        left: 15px;
+        font-size: 16px;
+        padding: 0 1px;
+        background: var(--secondary-color);
+      }
+  }
+
+  & label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--text-secundary-color);
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+
+  & select {
+    background-color: var(--cor-fundo-body-light);
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 1px solid var(--text-secundary-color);
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+}
+
+.checkbox {
+  color: var(--text-color);
+  user-select: none;
+  display: inline-block;
+
+  & input {
+    display: none;
+
+    & + label:before {
+      content: "";
+      width: 15px;
+      height: 16px;
+      border-radius: 4px;
+      border: 1px solid var(--text-secundary-color);
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      margin-bottom: 3px;
+    }
+
+    &:checked + label:before {
+      background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+      background-color: var(--primary-color);
+      background-position: center;
+      border: none;
+      width: 16.82px;
+      height: 17.82px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+#container-login {
+  display: flex;
+  height: 99.6vh;
+
+  & .container-form {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    & .container-form-login {
+      display: grid;
+      gap: 35px;
+      width: 400px;
+
+      & #login {
+        display: grid;
+        gap: 20px;
+
+        & .checkbox {
+          user-select: none;
+        }
+      }
+
+      & .container-form-logo {
+        display: flex;
+        justify-content: center;
+
+        & img {
+          max-width: 200px;
+          pointer-events: none;
+        }
+      }
+
+      & .container-form-botao {
+        & #botao-entrar {
+          background-color: var(--primary-color);
+          color: var(--white);
+          border: none;
+          padding: 10px 20px;
+          border-radius: 7px;
+          width: 100%;
+          height: 40px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--primary-color-hover);
+          }
+        }
+      }
+    }
+  }
+
+  & .container-imagem {
+    flex: 0 0 35%;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+  }
+
+  @media (width <= 42em) {
+    & .container-imagem {
+        display: none;
+    }
+
+    & .container-form {
+        & .container-form-login {
+            width: 90%;
+        }
+    }
+  }
+}
