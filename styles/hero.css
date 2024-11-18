@@ -58,8 +58,10 @@
     .hero {
         display: inline-block;
 
-        & .cartao {
+        & .card-grid {
+          & .cartao {
             display: none;
+        }
         }
 
         & .top-zone {

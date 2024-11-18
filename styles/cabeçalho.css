@@ -50,7 +50,6 @@
   } 
 
   .container{
-
     & .menu-mobile {
       display: flex;
       justify-content: space-evenly;
