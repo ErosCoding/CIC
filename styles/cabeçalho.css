@@ -21,6 +21,11 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  
+
+  & .menu-mobile {
+    display: none;
+  }
 
   & ul {
     list-style: none;
@@ -36,5 +41,28 @@
   & nav a {
     text-decoration: none;
     color: white;
+  }
+}
+
+@media (width <= 45.5em) {
+  .acessibilidade {
+    display: none;
+  } 
+
+  .container{
+    & .menu-mobile {
+      display: flex;
+      justify-content: space-evenly;
+      
+      & img {
+        width: 30px;
+        margin-left: 90px;
+      }
+    }
+   
+    & nav {
+      display: none;
+    }
+   
   }
 }
