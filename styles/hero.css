@@ -1,6 +1,6 @@
 .hero {
   background-color: #d9d9d9;
-  height: 80em;
+  height: 100vh;
 
   & img {
     width: 600px;
@@ -43,6 +43,10 @@
     justify-content: center;
     align-items: center;
 
+    & .card-info a {
+      text-decoration: none;
+    }
+
     & img {
       max-width: 40px;
     }
@@ -54,13 +58,14 @@
  }
 }
 
-@media (width <= 45.5em) {
+@media (max-width: 999px) {
     .hero {
         display: inline-block;
 
         & .card-grid {
           & .cartao {
-            display: none;
+            display: flex;
+          
         }
         }
 
@@ -69,6 +74,7 @@
         }
 
         & h1 {
+            margin-left: 40px;
             font-size: 10px;
             font-weight: normal;
             margin-top: 40px;
