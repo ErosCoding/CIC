@@ -64,6 +64,10 @@ nav {
   }
 }
 
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
