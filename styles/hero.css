@@ -1,87 +1,98 @@
 .hero {
-  background-color: #d9d9d9;
-  height: 100vh;
+  background-color: var(--secondary-color);
+  min-height: 100vh;
+  padding: 10px 12% 0 12%;
 
   & img {
     width: 600px;
   }
 
-  .top-zone {
+  & .top-zone {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: flex-end;
+    user-select: none;
+
+    & img {
+      width: 550px;
+      pointer-events: none;
+    }
   }
 
   & h1 {
     font-size: 20px;
     font-weight: normal;
-    margin-top: 40px;
   }
 
   & strong {
     color: #004A80;
     font-size: 30px;
- }
+  }
 
- .card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 23px;
-  text-align: center;
-  padding: 20px 7% 0 7%;
-  margin: 0 10% 0 10%;
-
-  & .cartao:hover {
-    background-color: #90e0ef;
-    }
-
-  & .cartao {
+  .card-grid {
     display: flex;
-    width: 180px;
-    height: 110px;
-    background-color: #fff;
-    border-radius: 8px; 
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 23px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
-    & .card-info a {
-      text-decoration: none;
+    & .cartao:hover {
+      background-color: var(--primary-color-opaca);
     }
 
-    & img {
-      max-width: 40px;
-    }
+    & .cartao {
+      display: flex;
+      width: 186px;
+      height: 110px;
+      background-color: #fff;
+      border-radius: 8px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
 
-    & p {
-      color: #777777;
+      & .card-info a {
+        text-decoration: none;
+      }
+
+      & img {
+        max-width: 40px;
+      }
+
+      & p {
+        color: #777777;
+      }
     }
-   }
- }
+  }
 }
 
 @media (max-width: 999px) {
-    .hero {
-        display: inline-block;
+  .hero {
+    display: inline-block;
+    padding-top: 30px;
 
-        & .card-grid {
-          & .cartao {
-            display: flex;
-          
-        }
-        }
+    & .card-grid {
+      & .cartao {
+        display: flex;
+        width: 45%;
 
-        & .top-zone {
-            display: inline;
-        }
-
-        & h1 {
-            margin-left: 40px;
-            font-size: 10px;
-            font-weight: normal;
-            margin-top: 40px;
-          }
-
-        & img {
-            width: 100%;
-        }
+      }
     }
+
+    & .top-zone {
+      display: inline;
+
+      & img {
+        display: none;
+      }
+    }
+
+    & h1 {
+      font-size: 15px;
+    }
+
+    & img {
+      width: 100%
+    }
+  }
 }

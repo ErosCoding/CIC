@@ -13,9 +13,21 @@
     color: white;
   }
 
+  .botao-acessibilidade {
+    display: flex;
+    justify-content: center;
+  }
+  
+  a:hover .icone-acessibilidade {
+    filter: brightness(0) saturate(100%) invert(9%) sepia(41%) saturate(5222%) hue-rotate(216deg) brightness(95%) contrast(130%);
+  }
+
+
   a:hover {
     color: var(--primary-color);
   }
+
+  
 
   & span img {
     display: inline-flex;
@@ -62,6 +74,10 @@ nav {
     display: inline-flex;
     margin-left: 5px;
   }
+}
+
+.mobile-menu {
+  display: none;
 }
 
 @media (max-width: 999px) {

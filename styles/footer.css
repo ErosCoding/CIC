@@ -1,6 +1,6 @@
 footer {
   margin-top: auto;
-  max-width: 100%;
+  top: 0;
 
   & .container-footer {
     min-height: 150px;
