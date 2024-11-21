@@ -14,8 +14,10 @@
     user-select: none;
 
     & img {
-      width: 550px;
+      width: 700px;
+      margin-top: 30px;
       pointer-events: none;
+      opacity: .7;
     }
   }
 
@@ -26,7 +28,7 @@
 
   & strong {
     color: #004A80;
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .card-grid {
