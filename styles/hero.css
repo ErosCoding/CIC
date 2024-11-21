@@ -75,8 +75,20 @@
   
   .dropdown-menu a {
     display: block;
-    padding: 40px;
+    padding: 20px 10px;
+    text-align: center;
   }
+
+  .dropdown-menu a:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    margin-top: 40px;
+    left: 10%; 
+    width: 80%; 
+    height: 1px; 
+    background-color: var(--t-color); 
+  }
+  
   
   .dropdown:hover .dropdown-menu {
     display: block;
