@@ -3,13 +3,14 @@ footer {
   top: 0;
 
   & .container-footer {
-    min-height: 150px;
+    min-height: 8em;
     background-color: var(--primary-color);
     color: var(--white);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1em;
 
     & .logo {
       max-width: 100%;
@@ -28,7 +29,7 @@ footer {
     }
   }
 
-  @media (width <= 36.15em) {
+  @media (width <= 39.2em) {
     & .container-footer .container-informacoes {
       text-align: center;
 
