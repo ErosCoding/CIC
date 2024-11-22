@@ -27,8 +27,6 @@
     color: var(--primary-color);
   }
 
-  
-
   & span img {
     display: inline-flex;
     margin-right: 5px;
@@ -46,6 +44,11 @@ nav {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer; 
+    user-select: none;
   }
   
   & a:hover {
@@ -58,7 +61,6 @@ nav {
   }
   
  & .nav-list li {
-    letter-spacing: 2px;
     margin-left: 32px;
   }
 
@@ -73,6 +75,33 @@ nav {
   & li img{
     display: inline-flex;
     margin-left: 5px;
+  }
+
+  & .dropdown-menu {
+    position: absolute;
+    background-color: var(--primary-color);
+    display: none;
+    width: 220px;
+    z-index: 1;
+  
+    & a {
+      display: block;
+      padding: 13px;
+
+      &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        margin-top: 28px;
+        left: 5%; 
+        width: 90%; 
+        height: 1px; 
+        background-color: var(--t-color); 
+      }
+    }
+  }
+  
+  & .dropdown:hover .dropdown-menu {
+    display: block;
   }
 }
 

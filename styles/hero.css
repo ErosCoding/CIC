@@ -1,6 +1,6 @@
 .hero {
-  background-color: #d2d2d2 ;
-  min-height: 100vh;
+  background-color: #eeeeee ;
+  min-height: 69.1vh;
   padding: 10px 12% 0 12%;
 
   & img {
@@ -15,9 +15,9 @@
 
     & img {
       width: 700px;
-      margin-top: 30px;
+      margin-top: 10px;
       pointer-events: none;
-      opacity: .7;
+      opacity: .3;
     }
   }
 
@@ -38,6 +38,7 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    user-select: none;
 
     & .cartao:hover {
       background-color: var(--primary-color-opaca);
@@ -67,34 +68,6 @@
     }
   }
 }
-
-.dropdown-menu {
-    position: absolute;
-    background-color: var(--primary-color);
-    display: none;
-    border-radius: 8px;
-  }
-  
-  .dropdown-menu a {
-    display: block;
-    padding: 20px 10px;
-    text-align: center;
-  }
-
-  .dropdown-menu a:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    margin-top: 40px;
-    left: 10%; 
-    width: 80%; 
-    height: 1px; 
-    background-color: var(--t-color); 
-  }
-  
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
 
 @media (max-width: 999px) {
   .hero {
