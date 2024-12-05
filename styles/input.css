@@ -1,6 +1,5 @@
 .input {
   position: relative;
-  margin-bottom: 20px;
 
   & input {
     height: 45px;
@@ -13,8 +12,17 @@
     background-color: var(--white);
     color: var(--cor-texto);
 
+    &:focus ~ label,
+    &.tem-texto ~ label {
+      top: 0;
+      left: 15px;
+      font-size: 16px;
+      padding: 0 1px;
+      background: var(--white);
+    }
+
     &:focus {
-      border-color: var(--text-secundary-color);
+      border-color: var(--primary-color);
 
       & ~ label {
         color: var(--primary-color);
@@ -31,15 +39,6 @@
     font-size: 19px;
     pointer-events: none;
     transition: 0.3s;
-  }
-
-  & input:focus ~ label,
-  & input.tem-texto ~ label {
-    top: 0;
-    left: 15px;
-    font-size: 16px;
-    padding: 0 1px;
-    background: var(--white);
   }
 }
 
@@ -78,5 +77,51 @@
 
   & label {
     cursor: pointer;
+  }
+}
+
+.toggle-switch {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1px;
+  gap: 3px;
+
+  & input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+
+    &:checked + .switch-container .slider {
+      left: 20px;
+    }
+
+    &:checked ~ .switch-container {
+      background-color: var(--primary-color);
+    }
+  }
+
+  & .switch-container {
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: #d1d1d1;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  & .slider {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    background-color: var(--white);
+    border-radius: 50%;
+    transition: all 0.3s ease;
   }
 }
