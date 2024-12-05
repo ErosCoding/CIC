@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIC</title>
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    <header>
+        <div class="acessibilidade">
+            <span>Acessibilidade</span>
+            <a href="#"><span class="botao-acessibilidade"><img class="icone-acessibilidade"
+                        src="./assets/icons/acessibility-1.svg">Ir para conteúdo</span></a>
+            <a href="#"><span class="botao-acessibilidade"><img class="icone-acessibilidade"
+                        src="./assets/icons/acessibility-2.svg">Ir para menu</span></a>
+            <a href="#"><span class="botao-acessibilidade"><img class="icone-acessibilidade"
+                        src="./assets/icons/acessibility-3.svg">Ir para barra de ações</span></a>
+        </div>
+        <nav>
+            <a class="logo" href="index.html"><img src="./assets/imgs/pbh logo.png" alt="logo cic"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="dropdown">
+                    <a>Geral<img src="assets/icons/arrow-down.svg"></a>
+
+                    <div class="dropdown-menu">
+                        <a href="#">Centros de Custo</a>
+                        <a href="#">Unidades</a>
+                        <a href="#">Endereços</a>
+                        <a href="#">Contratos</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a>Cadastros<img src="assets/icons/arrow-down.svg"></a>
+
+                    <div class="dropdown-menu">
+                        <a href="#">Entidades</a>
+                        <a href="#">Sistemas de Origem</a>
+                        <a href="#">Tipos de Unidade</a>
+                        <a href="#">Tipos de Serviço</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a>Carga<img src="assets/icons/arrow-down.svg"></a>
+
+                    <div class="dropdown-menu">
+                        <a href="#">Custos com Agua</a>
+                        <a href="#">Custos com Energia</a>
+                        <a href="#">Custos com Pessoal</a>
+                        <a href="#">Custos com Telefonia</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a>Gerenciamento<img src="assets/icons/arrow-down.svg"></a>
+
+                    <div class="dropdown-menu">
+                        <a href="#">Status Cargas</a>
+                        <a href="#">Configurar Cargas</a>
+                        <a href="#">Apagar Carga</a>
+                        <a href="#">Usuários</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="telaerro-cdc">
+        <div class="mensagem-erro">
+            <div id="container-erro-imagem">
+                <img src="assets/imgs/erro.png" alt="Balde furado">
+            </div>
+            <div id="container-erro-textos">
+                <h2>Página não encontrada</h2>
+                <a href="index.html">Voltar à página inicial</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <div class="logo">
+                <img src="assets/imgs/pbh logo.png" alt="Logo Prefeitura de Belo Horizonte">
+            </div>
+            <div class="container-informacoes">
+                <span id="titulo-informacoes">Gerência de Custos - GCUST</span>
+                <div class="contatos">
+                    <span>(31)3246-0528 / (31)3246-1622</span>
+                    <span>gcust@pbh.gov.br</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="mobile.js"></script>
+    <script src="input.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

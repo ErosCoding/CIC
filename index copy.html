@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIC</title>
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    <header>
+        <div class="acessibilidade">
+            <span>Acessibilidade</span>
+            <a href="#"><span class="botao-acessibilidade"><img class="icone-acessibilidade"
+                        src="./assets/icons/acessibility-1.svg">Ir para conteúdo</span></a>
+            <a href="#"><span class="botao-acessibilidade"><img class="icone-acessibilidade"
+                        src="./assets/icons/acessibility-2.svg">Ir para menu</span></a>
+            <a href="#"><span class="botao-acessibilidade"><img class="icone-acessibilidade"
+                        src="./assets/icons/acessibility-3.svg">Ir para barra de ações</span></a>
+        </div>
+        <nav>
+            <a class="logo" href="index.html"><img src="./assets/imgs/pbh logo.png" alt="logo cic"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="dropdown">
+                    <a>Geral<img src="assets/icons/arrow-down.svg"></a>
+
+                    <div class="dropdown-menu">
+                        <a href="#">Centros de Custo</a>
+                        <a href="#">Unidades</a>
+                        <a href="#">Endereços</a>
+                        <a href="#">Contratos</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a>Cadastros<img src="assets/icons/arrow-down.svg"></a>
+
+                    <div class="dropdown-menu">
+                        <a href="#">Entidades</a>
+                        <a href="#">Sistemas de Origem</a>
+                        <a href="#">Tipos de Unidade</a>
+                        <a href="#">Tipos de Serviço</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a>Carga<img src="assets/icons/arrow-down.svg"></a>
+
+                    <div class="dropdown-menu">
+                        <a href="#">Custos com Agua</a>
+                        <a href="#">Custos com Energia</a>
+                        <a href="#">Custos com Pessoal</a>
+                        <a href="#">Custos com Telefonia</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a>Gerenciamento<img src="assets/icons/arrow-down.svg"></a>
+
+                    <div class="dropdown-menu">
+                        <a href="#">Status Cargas</a>
+                        <a href="#">Configurar Cargas</a>
+                        <a href="#">Apagar Carga</a>
+                        <a href="#">Usuários</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cadastro-cdc">
+        <div class="container-topo-pagina">
+            <span class="titulo-pagina">Consultar Centro de Custo</span>
+            <div class="container-botoes-topo">
+                <button class="botao-formulario">Pesquisar</button>
+                <button class="botao-formulario">Criar novo</button>
+                <button class="botao-formulario">Limpar</button>
+            </div>
+        </div>
+
+        <form id="pesquisa" class="container-formulario" action="#" method="GET">
+            <div class="input inp-nome">
+                <input id="input-nome" name="nome" type="text">
+                <label for="input-nome">Nome Centro de Custo</label>
+            </div>
+
+            <div class="input inp-sigla">
+                <input id="input-sigla" name="sigla" type="text">
+                <label for="input-sigla">Sigla</label>
+            </div>
+
+            <div class="input inp-regional">
+                <input id="input-regional" name="regional" type="text">
+                <label for="input-regional">Regional</label>
+            </div>
+
+            <div class="input inp-entidade">
+                <input id="input-entidade" name="entidade" type="text">
+                <label for="input-entidade">Entidade</label>
+            </div>
+
+            <div class="input inp-tipo">
+                <input id="input-tipo" name="tipo" type="text">
+                <label for="input-tipo">Tipo de Centro de Custo</label>
+            </div>
+
+            <div class="input inp-unidade">
+                <input id="input-unidade" name="unidade" type="text">
+                <label for="input-unidade">Unidade</label>
+            </div>
+        </form>
+
+        <div id="container-botoes-de-pagina">
+            <button class="botao-de-pagina" id="pagina-atual">
+                <span>1</span>
+            </button>
+
+            <button class="botao-de-pagina">
+                <span>2</span>
+            </button>
+        </div>
+
+        <div id="container-tabela">
+            <table class="conteudo-tabela">
+                <thead>
+                    <tr>
+                        <th>Centro de Custo</th>
+                        <th>Sigla</th>
+                        <th>Regional</th>
+                        <th>Entidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PREFEITURA MUNICIPAL DE BELO HORIZONTE</td>
+                        <td>PMBH</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>PMBH</td>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                    </tr>
+                    <tr>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>PMBH</td>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                    </tr>
+                    <tr>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>PMBH</td>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                    </tr>
+                    <tr>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>PMBH</td>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                    </tr>
+                    <tr>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>PMBH</td>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <div class="logo">
+                <img src="assets/imgs/pbh logo.png" alt="Logo Prefeitura de Belo Horizonte">
+            </div>
+            <div class="container-informacoes">
+                <span id="titulo-informacoes">Gerência de Custos - GCUST</span>
+                <div class="contatos">
+                    <span>(31)3246-0528 / (31)3246-1622</span>
+                    <span>gcust@pbh.gov.br</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="mobile.js"></script>
+    <script src="input.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

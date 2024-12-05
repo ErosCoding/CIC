@@ -1,0 +1,41 @@
+#telaerro-cdc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 9em - 9em); /* (Total - navbar - footer) */
+
+  & .mensagem-erro {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & #container-erro-imagem {
+      user-select: none;
+      pointer-events: none;
+
+      & img {
+        width: 45%;
+        mix-blend-mode: multiply;
+        user-select: none;
+      }
+    }
+
+    & #container-erro-textos {
+      display: grid;
+      gap: 10px;
+
+      & a {
+        color: var(--primary-color);
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 17px;
+
+        &:hover {
+          color: var(--primary-color-hover);
+        }
+      }
+    }
+  }
+}

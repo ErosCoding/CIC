@@ -1,0 +1,30 @@
+#cadastro-cdc {
+  padding: 30px 12% 0 12%;
+
+  & .container-topo-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+    & .container-botoes-topo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      & .botao-formulario {
+        background-color: var(--t-color);
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        font-size: 14px;
+        border-radius: 7px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--t-color-hover);
+        }
+      }
+    }
+  }
+}
