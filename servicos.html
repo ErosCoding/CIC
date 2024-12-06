@@ -83,111 +83,50 @@
     </header>
 
     <section id="body">
-        <div class="container-topo-pagina">
-            <span class="titulo-pagina">Consultar Centro de Custo</span>
-            <div class="container-botoes-topo">
-                <button class="botao-formulario">Pesquisar</button>
-                <button class="botao-formulario">Criar novo</button>
-                <button class="botao-formulario">Limpar</button>
-            </div>
-        </div>
-
-        <form id="pesquisa" class="container-formulario" action="#" method="GET">
-            <div class="input inp-nome">
-                <input id="input-nome" name="nome" type="text">
-                <label for="input-nome">Nome Centro de Custo</label>
-            </div>
-
-            <div class="input inp-sigla">
-                <input id="input-sigla" name="sigla" type="text">
-                <label for="input-sigla">Sigla</label>
-            </div>
-
-            <div class="input inp-regional">
-                <input id="input-regional" name="regional" type="text">
-                <label for="input-regional">Regional</label>
-            </div>
-
-            <div class="input inp-entidade">
-                <input id="input-entidade" name="entidade" type="text">
-                <label for="input-entidade">Entidade</label>
-            </div>
-
-            <div class="input inp-tipo">
-                <input id="input-tipo" name="tipo" type="text">
-                <label for="input-tipo">Tipo de Centro de Custo</label>
-            </div>
-
-            <div class="input inp-unidade">
-                <input id="input-unidade" name="unidade" type="text">
-                <label for="input-unidade">Unidade</label>
-            </div>
-
-            <div class="toggle-switch">
-                <span>Pergunta?</span>
-                <input id="input-switch" type="checkbox">
-                <label for="input-switch" class="switch-container">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </form>
-
-        <div id="container-botoes-de-pagina">
-            <button class="botao-de-pagina" id="pagina-atual">
-                <span>1</span>
-            </button>
-
-            <button class="botao-de-pagina">
-                <span>2</span>
-            </button>
-        </div>
-
         <div id="container-tabela">
             <table class="conteudo-tabela">
                 <thead>
                     <tr>
-                        <th>Centro de Custo</th>
-                        <th>Sigla</th>
-                        <th>Regional</th>
-                        <th>Entidade</th>
+                        <th></th>
+                        <th>Código</th>
+                        <th>Tipo de serviço</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>PREFEITURA MUNICIPAL DE BELO HORIZONTE</td>
-                        <td>PMBH</td>
-                        <td> </td>
-                        <td> </td>
+                        <td>
+                            <div class="checkbox">
+                                <input id="checkbox-1" type="checkbox">
+                                <label for="checkbox-1"></a></label>
+                            </div>
+                        </td>
+                        <td>1</td>
+                        <td>Aterragem de resídeuos sólidos urbanos</td>
                     </tr>
                     <tr>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                        <td>PMBH</td>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>
+                            <div class="checkbox">
+                                <input id="checkbox-2" type="checkbox">
+                                <label for="checkbox-2"></a></label>
+                            </div>
+                        </td>
+                        <td>2</td>
+                        <td>Capina e roçada em vias e outros logradouros públicos</td>
                     </tr>
                     <tr>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                        <td>PMBH</td>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                        <td>
+                            <div class="checkbox">
+                                <input id="checkbox-3" type="checkbox">
+                                <label for="checkbox-3"></a></label>
+                            </div>
+                        </td>
+                        <td>3</td>
+                        <td>Coleta de resíduos comuns em unidades de serviços de saúde</td>
                     </tr>
-                    <tr>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                        <td>PMBH</td>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                    </tr>
-                    <tr>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                        <td>PMBH</td>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                    </tr>
-                    <tr>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                        <td>PMBH</td>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
-                        <td>CONSELHO MUNICIPAL DE SEGURANAA ALIMENTAR E NUTRICIONAL DE BELO HORIZONTE</td>
+                    <tr id="linha-incluir-novo">
+                        <td></td>
+                        <td></td>
+                        <td><i class="uil uil-plus"></i> Incluir novo tipo de serviço</td>
                     </tr>
                 </tbody>
             </table>

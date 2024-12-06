@@ -17,22 +17,34 @@
   width: 100%;
   overflow-x: auto;
 
-  table {
+  & table {
     width: 100%;
     border-collapse: collapse;
 
-    th, td {
+    & th, td {
       padding: 10px;
       text-align: center;
     }
 
-    tr:not(:last-child) {
+    & tr:not(:last-child) {
       border-bottom: 0.12em solid #ddd;
     }
 
-    tr:hover td {
+    & tr:hover td {
       background-color: var(--primary-color-opaca);
-      cursor: default;
+    }
+
+    & tr#linha-incluir-novo {
+      color: var(--text-secundary-color);
+      font-weight: 400;
+      cursor: pointer;
+      user-select: none;
+
+      &:hover td{
+        transition: border-color 0.3s ease-in-out;
+        color: var(--text-secundary-color-hover);
+        background-color: transparent;
+      }
     }
   }
 }
@@ -42,39 +54,39 @@
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
-}
 
-.botao-de-pagina {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--text-secundary-color);
-  border-radius: 3px;
+  & .botao-de-pagina {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--text-secundary-color);
+    border-radius: 3px;
 
-  &:hover {
-    border-color: var(--t-color);
+    &:hover {
+      border-color: var(--t-color);
+
+      & span {
+        color: var(--t-color);
+      }
+    }
 
     & span {
-      color: var(--t-color);
+      color: var(--text-secundary-color);
     }
   }
 
-  & span {
-    color: var(--text-secundary-color);
-  }
-}
+  & #pagina-atual {
+    background-color: var(--t-color);
+    border-color: var(--t-color);
 
-#pagina-atual {
-  background-color: var(--t-color);
-  border-color: var(--t-color);
+    &:hover {
+      background-color: var(--t-color-hover);
+    }
 
-  &:hover {
-    background-color: var(--t-color-hover);
-  } 
-  
-  & span {
-    color: white;
+    & span {
+      color: white;
+    }
   }
 }
