@@ -122,9 +122,11 @@ nav {
   }
 
   nav {
+    text-align: center;
+
     & .dropdown-menu {
+      margin-top: 20px;
       position: relative;
-      text-align: center;
       display: none;
       flex-direction: column;
       gap: 20px;
