@@ -19,4 +19,16 @@ function handleClick() {
   animateLinks();
 }
 
-mobileMenu.addEventListener("click", handleClick)
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (link.classList.contains(activeClass)) {
+      link.classList.remove(activeClass);
+    } else {
+      navLinks.forEach((item) => item.classList.remove(activeClass));
+
+      link.classList.add(activeClass);
+    }
+  });
+});
+
+mobileMenu.addEventListener("click", handleClick);
