@@ -117,6 +117,7 @@ nav {
 
   .acessibilidade {
     display: none;
+    
   }
 
   nav {
@@ -128,6 +129,10 @@ nav {
       display: none;
       flex-direction: column;
       gap: 20px;
+      background-color: rgb(1, 64, 109);
+      width: 100%;
+      padding: 15px;
+      box-shadow: rgba(0, 0, 0, 0.04) 4px 2px 4px 2px inset;
 
       & a {
         display: block;
@@ -165,6 +170,10 @@ nav {
 
     & .dropdown.active .dropdown-menu {
       display: flex;
+    }
+
+    & .dropdown.active {
+      width: 100%;
     }
 
     & .mobile-menu {
